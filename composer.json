@@ -1,5 +1,5 @@
 {
-    "name": "amphp/process",
+    "name": "bilge/amphp-process",
     "homepage": "https://github.com/amphp/process",
     "description": "Asynchronous process manager.",
     "require": {
@@ -51,5 +51,8 @@
         "cs": "PHP_CS_FIXER_IGNORE_ENV=1 php-cs-fixer fix -v --diff --dry-run",
         "cs-fix": "PHP_CS_FIXER_IGNORE_ENV=1 php-cs-fixer fix -v --diff",
         "test": "@php -dzend.assertions=1 -dassert.exception=1 ./vendor/bin/phpunit --coverage-text"
+    },
+    "replace": {
+        "amphp/process": "*"
     }
 }
